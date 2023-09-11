@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 90vh;
+    width: 100vw;
+    background-image: url(imgs/landing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img {
+    position: fixed;
+    width: 10%;
+    top: 5%;
+    left: 5%;
+}
+
+.container{
+    width: 40vw;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10vh;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px;
+    transition: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container h1{
+    color: #024b73;
+    background-color: #ffdb75;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 4.5vh;
+}
+.container form,.con1 {
+    padding: 20px;
+}
+
+.container label {
+    font-size: 2.5vh;
+    font-weight: 200;
+}
+
+.container input[type='text'], input[type='date'], input[type='email'], input[type='submit'],input[type='reset']{
+    width: 100%;
+    display:inline-block;
+    padding: 7px;
+    margin:1vh;
+    background: gainsboro;
+    border: solid gray 3px;
+    border-radius: 10px;
+    font-size: 2vh;
+}
+.container select, option {
+    width: 100%;
+    display:inline-block;
+    padding: 7px;
+    margin:10px;
+    background: gainsboro;
+    border: solid gray 3px;
+    border-radius: 10px;
+    font-size: 2vh;
+}
+.container input[type='reset']{
+    background: rgb(224, 101, 101);
+    font-weight: bolder;
+    border: 0px;
+    font-size: 2.5vh;
+}
+
+.container [type='submit']{
+    background: #024b73;
+    color: white;
+    font-weight: bolder;
+    border: 0px;
+    font-size: 2.5vh;
+}
+
+.container .error-msg{
+   display: block;
+   border-radius: 10px;
+   margin-left: 37%; 
+   width: 22%;
+   padding:10px 5px;
+   background-color: crimson;
+   font-size: 20px;
+   color: white;
+}
+
+.container h2{
+    padding: 10px;
+}
+
+p {
+    font-size: larger;
+}
+p a {
+    text-decoration: none;
+    color: #024b73;
+}
+
+::selection {
+    background: #339999;
+}
+
+
+
+.buttun {
+    transition: 100ms cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+} 
+
+.container:hover {
+    transform: scale(1.05);
+}
+.buttun:hover {
+    transform: scale(1.05);
+}
